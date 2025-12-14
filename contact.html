@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hostel Room Booking System for reservation enquiries and partnership opportunities.">
+    <title>Hostel Room Booking System | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#mainContent">Skip to main content</a>
+    <header>
+        <div class="top-bar">
+            <a class="brand" href="index.html" aria-label="Hostel Room Booking System home">
+                <span class="brand-icon" aria-hidden="true">🛎️</span>
+                <span class="brand-title">Hostel Room Booking System</span>
+            </a>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="mainContent">
+        <section class="content-wrapper contact-grid">
+            <div class="contact-details">
+                <h1>Let's plan your next stay</h1>
+                <p>Send us your questions about availability, partnership proposals, or media collaborations. Our concierge team responds within 24 hours on weekdays.</p>
+                <ul aria-label="Contact details">
+                    <li>
+                        <span aria-hidden="true">📧</span>
+                        <div>
+                            <strong>Email</strong><br>
+                            <a href="mailto:stay@hostelbookingsystem.com">stay@hostelbookingsystem.com</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span aria-hidden="true">📞</span>
+                        <div>
+                            <strong>Phone</strong><br>
+                            <a href="tel:+11234567890">+1 (123) 456-7890</a><br>
+                            <small>Available 8:00–20:00 (GMT-5)</small>
+                        </div>
+                    </li>
+                    <li>
+                        <span aria-hidden="true">📍</span>
+                        <div>
+                            <strong>Head office</strong><br>
+                            120 Urban Way, Riverside District<br>
+                            Metropolis, NY 10001
+                        </div>
+                    </li>
+                </ul>
+                <div class="info-banner" id="privacy">
+                    <strong>Privacy commitment</strong>
+                    <p>We collect only the details necessary to answer your enquiry and never share personal information with third parties.</p>
+                </div>
+            </div>
+
+            <form id="contactForm" aria-describedby="contactIntro contactFeedback">
+                <h2>Contact form</h2>
+                <p id="contactIntro">Fields marked with <span class="required">*</span> are required. We respond using your preferred contact method.</p>
+                <div class="form-feedback" id="contactFeedback" aria-live="assertive"></div>
+
+                <fieldset>
+                    <legend class="visually-hidden">Contact details and booking information</legend>
+
+                    <div>
+                        <label for="fullName">Full name <span class="required" aria-hidden="true">*</span></label>
+                        <input type="text" id="fullName" name="fullName" autocomplete="name" required minlength="3" placeholder="e.g., Priya Das">
+                    </div>
+
+                    <div>
+                        <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone (optional)</label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" pattern="^[+]?[(]?[0-9]{1,4}[)]?[-\s\./0-9]*$" placeholder="+44 20 1234 5678">
+                    </div>
+
+                    <div>
+                        <label for="roomType">Preferred room type <span class="required" aria-hidden="true">*</span></label>
+                        <select id="roomType" name="roomType" required>
+                            <option value="">Select a room</option>
+                            <option>Single Serenity</option>
+                            <option>Double Discovery</option>
+                            <option>Deluxe Loft</option>
+                            <option>Community Dorm</option>
+                            <option>Family Suite</option>
+                            <option>Skyline Terrace Add-on</option>
+                        </select>
+                    </div>
+
+                    <div class="dates-row">
+                        <div>
+                            <label for="checkIn">Check-in</label>
+                            <input type="date" id="checkIn" name="checkIn">
+                        </div>
+                        <div>
+                            <label for="checkOut">Check-out</label>
+                            <input type="date" id="checkOut" name="checkOut">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="message">Tell us about your stay <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" required minlength="20" placeholder="Share your travel purpose, group size, and preferred services."></textarea>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I agree to the privacy policy and allow Hostel Room Booking System to contact me about this enquiry. <span class="required" aria-hidden="true">*</span></label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary">Send message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <span class="footer-logo">
+                    <span aria-hidden="true">🛎️</span>
+                    Hostel Room Booking System
+                </span>
+                <p>Your trusted partner for flexible, student-friendly hostel bookings across vibrant city hubs.</p>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Connect</h3>
+                <ul>
+                    <li>Email: <a href="mailto:stay@hostelbookingsystem.com">stay@hostelbookingsystem.com</a></li>
+                    <li>Phone: <a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                    <li>Address: 120 Urban Way, Riverside District</li>
+                </ul>
+                <div class="social-links" aria-label="Social links">
+                    <a href="https://www.instagram.com" aria-label="Instagram">
+                        <span aria-hidden="true">📷</span>
+                    </a>
+                    <a href="https://www.facebook.com" aria-label="Facebook">
+                        <span aria-hidden="true">👍</span>
+                    </a>
+                    <a href="https://www.linkedin.com" aria-label="LinkedIn">
+                        <span aria-hidden="true">💼</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© <span id="currentYear">2025</span> Hostel Room Booking System</span>
+            <span><a href="#privacy">Privacy &amp; Safety</a></span>
+        </div>
+    </footer>
+</body>
+</html>
+
